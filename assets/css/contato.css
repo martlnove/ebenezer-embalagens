@@ -1,0 +1,220 @@
+.contato {
+  padding: 5rem;
+}
+
+
+.contatoCampo {
+  margin: .8em auto;
+  max-width: 600px;
+  position: relative;
+}
+
+.contatoCampo-label:before {
+  content:'';
+  vertical-align: middle;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color: #fff;
+  transform: translate(-7px, -3px);
+  border: 1px solid #7D7D7D;
+  color: transparent;
+  line-height: 1;
+  transition: .2s ease-in;
+}
+
+.contatoCampo-checkbox:checked + .contatoCampo-label:before {
+  content: 'x';
+  color: #fff;
+  background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
+}
+
+.contatoCampo-checkbox {
+  display: none;
+}
+
+.contatoCampo-icone {
+  position: absolute;
+  left: -2em;
+  top: 2.5em;
+  width: 1.5em;
+}
+
+.contatoCampo label,
+.contatoCampo input,
+.contatoCampo textarea {
+  display: block;
+  width: 100%;
+  text-align: left;
+} 
+
+.contatoCampo label {
+  margin-bottom: 5px;
+  margin-left: 8px;
+} 
+
+.contatoCampo input,
+.contatoCampo textarea {
+  font-size: 1em;
+  padding: .5em;
+  min-height: 50px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  outline: 0;
+} 
+
+.contatoCampo input:focus,
+.contatoCampo textarea:focus {
+  border: 2px solid #222;
+} 
+
+.contatoCampo-campoDesabilitado {
+  background-color: #ddd;
+}
+
+.contatoCampo-msg, 
+.formContato-validacao {
+  margin-left: 4px;
+  margin-top: 4px;
+  font-size: .9em;
+  font-weight: bold;
+  color: #FD1242;
+  display: inline-block;
+}
+
+.contatoCampo .contatoCampo--validouFoi {
+  border: 2px solid #219653;
+  background-color: #fff;
+  position: relative;
+}
+
+.contatoCampo .contatoCampo--validouErro {
+  border: 2px solid #FF0000;
+  background-color: #fff;
+  position: relative;
+}
+
+.contatoCampo--sucesso:before {
+  content: '';
+  display: inline-block;
+  width: 33px;
+  height: 32px;
+  position: absolute;
+  z-index: 1;
+  right: .4em;
+  transform: translateY(112%) scale(.65);
+  background-image: url(../img/validacao-sucesso.png);
+}
+
+.contatoCampo--erro:before {
+  content: '';
+  display: inline-block;
+  width: 33px;
+  height: 32px;
+  position: absolute;
+  z-index: 1;
+  right: .4em;
+  transform: translateY(112%) scale(.65);
+  background-image: url(../img/validacao-erro.png);
+}
+
+
+.formContato {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+
+.formContato-validacao {
+  display: block;
+  text-align: left;
+}
+
+.formContato-cta {
+  width: 100%;
+  margin: .5em 0;
+}
+
+.formContato-cta {
+  margin-top: 1em;
+  display: inline-block;
+  background: transparent;
+  color: #B72E2E;
+  border: 1px solid #B72E2E;
+  width: 100%;
+}
+
+.formContato-cta:hover,
+.formContato-cta:focus {
+  color: #fff;
+  background-color: #B72E2E;
+}
+
+.formContato-endereco {
+  color: #666;
+  margin: 1em 0;
+  text-align: center;
+}
+
+
+.contato {
+  background-color: #F7F4F4;
+  text-align: center;
+  text-align: left;
+}
+
+.contato-wink {
+  color: #EB5757;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.contato-form-fieldset {
+  border: 0;
+}
+
+.contato-form-legend {
+  max-width: 300px;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contato-form-cta {
+  width: 100%;
+  margin-top: 1em;
+  display: block;
+  background: transparent;
+  color: #B72E2E;
+  border: 1px solid #B72E2E;
+}
+
+.contato-form-cta:hover {
+  color: #fff;
+  background-color: #B72E2E;
+}
+
+.btnPadrao:hover {
+  color: #fff;
+}
+
+.btnPadrao {
+  border-radius: 5px;
+  border: 0;
+  background-color: #B72E2E;
+  color: #fff;
+  font-size: 1.2em;
+  padding: .3em 1em;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  outline: 0;
+  text-decoration: none;
+}
+
+.texto-modal {
+  color: #8d0606;
+  font-size: 1rem;
+  font-family: cursive;
+  text-align: center;
+}

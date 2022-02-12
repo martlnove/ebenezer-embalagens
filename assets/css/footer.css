@@ -1,0 +1,24 @@
+.footer {
+	align-items: center;
+	background: #e5e5e5;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.footer-descricao{
+	font-weight: 100;
+	font-size: 1rem;
+	color: #595959;
+}
+
+
+@media screen and (max-width: 970px){
+	.whatsapp-icon {
+		width: 150px;
+	}
+	.footer-descricao {
+		display: none;
+	}
+}
