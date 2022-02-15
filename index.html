@@ -6,12 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ebenezer Embalagens</title>
     <link rel="shortcut icon" href="./assets/img/favicon.png" />
-    <link href="./assets/css/normalize.css" rel="stylesheet" />
-    <link href="./assets/css/reset.css" rel="stylesheet" />
-    <link href="./assets/css/cabecalho.css" rel="stylesheet" />
     <link href="./assets/css/logo.css" rel="stylesheet" />
     <link href="./assets/css/menu.css" rel="stylesheet" />
-    <link href="./assets/css/banner.css" rel="stylesheet" />
     <link href="./assets/css/sobre.css" rel="stylesheet" />
     <link href="./assets/css/principais-servicos.css" rel="stylesheet" />
     <link href="./assets/css/servicos.css" rel="stylesheet" />
@@ -26,7 +22,7 @@
 </head>
 
 <body>
-    <header class="cabecalho">
+    <header>
         <div class="navbar navbar-light bg-light container">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo-header.png" width="200" height="200" class="d-inline-block align-top" alt="">
@@ -42,9 +38,8 @@
         </div>
     </header>
 
-    <section class="banner">
-        <div class="banner-imagem"></div>
-        <h2 class="banner-titulo">Todo tipo de embalagem</h2>
+    <section class="banner container">
+        <img class="container" src="assets/img/banner2.png">
     </section>
 
     <section class="embalagens container">
@@ -159,12 +154,20 @@
     </section>
 
 
-    <section class="sobre" id="sobre-nav">
-        <h2 class="sobre-titulo">Ebenezer Embalagens</h2>
-        <p class="sobre-descricao">Com mais de dez anos de experiência, atuamos no mercado de embalagens oferecendo
-            soluções para o mercado da alimentação e atendendo clientes de diversos tamanhos e necessidades. Prestamos
-            consultoria gratuita, com atendimento diferenciado para clientes que desejam entrar no ramo da alimentação
-        </p>
+    <section class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="container text-center">Ebenezer Embalagens</h2>
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p class="lead">Com mais de dez anos de experiência, atuamos no mercado de embalagens oferecendo
+                    soluções para o mercado da alimentação e atendendo clientes de diversos tamanhos e necessidades. Prestamos
+                    consultoria gratuita, com atendimento diferenciado para clientes que desejam entrar no ramo da alimentação
+                </p>
+              </blockquote>
+            </div>
+          </div>
     </section>
 
     <section class="principais-servicos" id="servicos-nav">
@@ -214,44 +217,9 @@
         </div>
     </section>
 
-    <section class="contato" id="contato-nav">
-        <h3 class="area-atuacao-titulo">Contato</h3>
-
-        <form class="contato-form">
-            <div class="contatoCampo">
-                <label>Nome: </label>
-                <input type="text" class="contatoCampo">
-            </div>
-
-            <div class="contatoCampo">
-                <label>Email: </label>
-                <input type="email" class="contatoCampo">
-            </div>
-
-            <div class="contatoCampo">
-                <label>Telefone: </label>
-                <input type="text" class="contatoCampo" placeholder="(51) 33571-2751">
-            </div>
-
-            <div class="contatoCampo">
-                <label>CEP: </label>
-                <input type="text" maxlength="8" placeholder="Exemplo: 04101-300">
-            </div>
-
-            <div class="contatoCampo">
-                <label>Mensagem: </label>
-                <textarea name="" cols="30" rows="10"></textarea>
-            </div>
-
-            <div class="contatoCampo">
-                <button class="contato-form-cta btnPadrao" type="button" data-toggle="modal"
-                    data-target="#staticBackdrop">Enviar mensagem</button>
-            </div>
-        </form>
-    </section>
     <footer class="footer">
         <a href="file:///C:/Users/Lenovo/Desktop/projetofinal/index.html">
-            <img class="logo" alt="Ebenezer Embalagens" src="./assets/img/logo.png" /></a>
+            <img class="logo" alt="Ebenezer Embalagens" src="./assets/img/logo-header.png" /></a>
         <p class="footer-descricao">Ebenezer Embalagens 2020. Todos os direitos reservados &copy;</p>
         <a href="https://api.whatsapp.com/send?phone=5551993260047&text=Fale%20conosco%20por%20whatsapp!"><img
                 class="whatsapp-icon" src="assets/img/botao-whatsapp.png"></a>
@@ -259,22 +227,3 @@
 </body>
 
 </html>
-
-
-<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                </button>
-            </div>
-            <div class="modal-body texto-modal">
-                Mensagem enviada!
-            </div>
-            <div class="modal-footer">
-                <button class="contato-form-cta btnPadrao" type="button" data-dismiss="modal">Fechar</button>
-            </div>
-        </div>
-    </div>
-</div>
